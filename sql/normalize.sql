@@ -1,4 +1,4 @@
-select '178 steps; quite slow, on the order of 20 minutes :(' as 'Normalizing dataset by film';
+select '178 steps; quite slow, on the order of 20-40 minutes :(' as 'Normalizing dataset by film';
 
 select 'Progress: 0%' as 'Normalizing dataset by film';
 update ratings join movies on ratings.movieid = movies.movieid set ratings.n_rating = ratings.rating - movies.mean where movies.movieid >= 1 and movies.movieid < 100;
