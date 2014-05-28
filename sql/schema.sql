@@ -1,5 +1,6 @@
 select 'Drop existing databases, tables' as 'Creating database and tables';
 
+drop database nfp;
 create database if not exists nfp;
 use nfp;
 

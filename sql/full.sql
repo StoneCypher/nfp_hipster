@@ -1,5 +1,7 @@
-source /projects/nfp_hipster/sql/schema.sql
-source /projects/nfp_hipster/sql/load.sql
+-- source /projects/nfp_hipster/sql/schema.sql
+source /projects/nfp_hipster/sql/moviedata.sql
+-- source /projects/nfp_hipster/sql/load.sql
+-- source /projects/nfp_hipster/sql/verify.sql
 -- source /projects/nfp_hipster/sql/test.sql
 -- source /projects/nfp_hipster/sql/index.sql
 -- source /projects/nfp_hipster/sql/preprocess.sql
