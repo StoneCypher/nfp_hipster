@@ -10,11 +10,11 @@ create table movies(
     movieid smallint primary key not null, 
     name    varchar(200)         not null, 
     year    smallint             not null
-);
+) engine=myisam;
 
 create table ratings(
     userid  mediumint not null,
     movieid smallint  not null,
     rating  tinyint   not null,
     rdate   date      not null
-);
+) engine=myisam;
