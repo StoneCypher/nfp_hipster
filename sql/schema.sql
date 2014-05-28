@@ -10,7 +10,9 @@ drop table if exists movies;
 create table movies(
     movieid smallint primary key not null, 
     name    varchar(200)         not null, 
-    year    smallint                 null
+    year    smallint                 null,
+    rcount  integer              not null default 0,
+    mean    double               not null default 0.0
 ) engine=myisam character set latin1 collate latin1_swedish_ci;
 
 create table ratings(
