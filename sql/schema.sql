@@ -7,14 +7,13 @@ drop table if exists ratings;
 drop table if exists movies;
 
 create table movies(
-	mid   smallint primary key not null, 
-	mname varchar              not null, 
-	myear smallint             not null
+    movieid smallint primary key not null, 
+    name    varchar(200)         not null, 
+    year    smallint             not null
 );
 
 create table ratings(
-	userid  mediumint not null,
-	movieid smallint  not null,
-	name    varchar   not null,
-	rdate   smallint  not null
+    userid  mediumint not null,
+    movieid smallint  not null,
+    rdate   smallint  not null
 );
