@@ -16,5 +16,5 @@ create table ratings(
     userid  mediumint not null,
     movieid smallint  not null,
     rating  tinyint   not null,
-    rdate   smallint  not null
+    rdate   date      not null
 );
