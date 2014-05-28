@@ -3,5 +3,8 @@ SELECT 'Bulk scan...' as 'Loading movie data';
 LOAD DATA
     INFILE '/projects/nfp_hipster/download/movie_titles.txt'
     INTO TABLE movies
-    FIELDS TERMINATED BY ','
-    (movieid,year,name);
+    (@tmpline)
+SET
+    movieid = SUBSTRING_INDEX(@tmpline, ',', 1),
+    name    = SUBSTRING(@tmpline FROM LOCATE(',', @tmpline, LOCATE(',', @tmpline)+1)+1),
+    year    = SUBSTRING_INDEX(SUBSTRING_INDEX(@tmpline, ',', 2), ',', -1);

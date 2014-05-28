@@ -10,8 +10,8 @@ drop table if exists movies;
 create table movies(
     movieid smallint primary key not null, 
     name    varchar(200)         not null, 
-    year    smallint             not null
-) engine=myisam;
+    year    smallint                 null
+) engine=myisam character set latin1 collate latin1_swedish_ci;
 
 create table ratings(
     userid  mediumint not null,
