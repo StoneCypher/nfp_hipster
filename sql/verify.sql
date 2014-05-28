@@ -1,5 +1,7 @@
+
 select 'Make and populate verify table; check' as 'Creating verification tables';
 
+drop table if exists verify;
 create table verify(movieid smallint not null, len mediumint not null, checklen mediumint default null);
 
 -- LC = fun(I) -> list_to_integer(string:strip(string:strip(os:cmd(lists:flatten(io_lib:format("findstr /R /N \"^\" c:\\projects\\nfp_hipster\\download\\training_set\\mv_00~5.10.0b.txt | find /C \":\"", [I]))), both, $\n), both, $\r)) - 1 end.
