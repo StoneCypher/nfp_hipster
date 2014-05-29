@@ -9,8 +9,8 @@ drop table if exists ratings;
 drop table if exists movies;
 
 create table movies(
-    movieid smallint primary key not null, 
-    name    varchar(200)         not null, 
+    movieid smallint primary key not null,
+    name    varchar(200)         not null,
     year    smallint                 null,
     rcount  integer              not null default 0,
     mean    double               not null default 0.0
@@ -25,7 +25,9 @@ create table ratings(
 ) engine=myisam;
 
 create table users(
-    userid  mediumint not null,
-    rcount  integer   not null default 0,
-    mean    double    not null default 0.0
+    userid   mediumint not null,
+    rcount   integer   not null default 0,
+    mean     double    not null default 0.0,
+    variance double    not null default 0.0,
+    stddev   double    not null default 0.0
 ) engine=myisam;

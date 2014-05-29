@@ -10,3 +10,5 @@ SELECT 'Statistical indices (two steps)' as 'Generating user index data';
 
 alter table users add index(rcount);
 alter table users add index(mean);
+alter table users add index(variance);
+alter table users add index(stddev);
