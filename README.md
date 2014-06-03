@@ -8,6 +8,14 @@ I play NFP for fun a lot, years after it's over, because I enjoy machine learnin
 
 
 
+Status: *semi-usable*
+---------------------
+
+This generates a bunch of useful SQL data, correctly.  There's more to come, though.  This is importantly incomplete.
+
+
+
+
 
 God damnit just write a straightforward readme for once?
 --------------------------------------------------------
